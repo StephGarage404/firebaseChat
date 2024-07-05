@@ -1,22 +1,12 @@
 import { StyleSheet, View, Text } from "react-native";
 import React from "react";
+import { ActivityIndicator } from "react-native-web";
+import { Center } from "@gluestack-ui/config/build/theme";
 
-export default function Home() {
+export default function StartPage() {
   return (
-    <View >
-      <Text style={styles.Title}>Home</Text>
-    </View>
+    <Center >
+      <ActivityIndicator size="large" color="gray" />
+    </Center>
   );
 }
-
-const styles = StyleSheet.create({
-  Title: {
-    marginTop: 16,
-    paddingVertical: 8,
-    backgroundColor: '#61dafb',
-    color: '#20232a',
-    textAlign: 'center',
-    fontSize: 30,
-    fontWeight: 'bold',
-  },
-});
